@@ -1,0 +1,122 @@
+.packages h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10%;
+    font-size: 44.8px;
+}
+
+.packages .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.packages .about .about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.packages .about .about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 500ms ease;
+    border-radius: 7%;
+}
+
+.packages .about .about-image p {
+    color: #949494;
+    text-align: center;
+}
+
+.packages .about .about-content {
+    flex: 1;
+}
+
+.packages .package-redeem-child {
+    border: 2px solid #debd94;
+    padding: 10px 50px 10px 50px;
+    border-radius: 14px;
+}
+
+.packages .package-redeem-child .child1 {
+    font-size: 22px;
+}
+
+.packages .package-redeem-child .child2 {
+    float: right;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #debd94;
+}
+
+.packages .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    opacity: 0.3;
+}
+
+.redeemPackageBTN {
+    opacity: 0.3 !important;
+}
+
+.packages .buttons .btnViewDetails {
+    text-align: center;
+    width: 45%;
+}
+
+.packages .buttons .btnViewDetails .viewDetailsBTN {
+    width: 100%;
+}
+
+.packages .buttons button {
+    flex: 1;
+    overflow: hidden;
+    border: none;
+    padding: 5px;
+    background-color: #debd94;
+    font-weight: bold;
+    transition: 200ms all ease-in-out;
+    border-radius: 6px;
+}
+
+.packages .buttons button:hover {
+    box-shadow: 0 0 15px #debd94;
+}
+
+@media screen and (max-width: 854px) {
+    .packages .about {
+        flex-direction: column;
+    }
+
+    .packages .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .packages .buttons button {
+        flex: 1;
+        overflow: hidden;
+        border: none;
+        width: 100%;
+    }
+
+    .packages .about .about-image {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .packages .buttons .btnViewDetails {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .packages .buttons .btnViewDetails .viewDetailsBTN {
+        width: 100%;
+    }
+}

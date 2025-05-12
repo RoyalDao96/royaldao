@@ -1,0 +1,23 @@
+[
+    {
+        "ticker": "wETH",
+        "img": "",
+        "name": "Wrapped Ethereum",
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "decimals": 18
+    },
+    {
+        "ticker": "wBTC",
+        "img": "",
+        "name": "Wrapped Bitcoin",
+        "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "decimals": 18
+    },
+    {
+        "ticker": "wSOL",
+        "img": "",
+        "name": "Wrapped Solana",
+        "address": "0xD31a59c85aE9D8edEFeC411D448f90841571b89c",
+        "decimals": 18
+    }
+]

@@ -1,0 +1,15 @@
+.strategy_parent {
+    height: 150vh;
+    background-color: #000 !important;
+}
+
+.strategy_parent img {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 821px) {
+    .strategy_parent {
+        height: 85vh;
+        margin-top: -5% !important;
+    }
+}

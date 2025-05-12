@@ -1,0 +1,52 @@
+.parent-footer {
+    display: flex;           /* Enables Flexbox layout */
+    flex-direction: column;  /* Stacks children vertically */
+    align-items: center;     /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically (if needed) */
+    width: 90%;              /* Width of the footer */
+    padding: 20px;           /* Adds padding around the content */
+    border: 1px solid #d5b08a;       /* Adds border around the footer */
+    border-top-left-radius: 70px; /* Rounds the top-left corner */
+    border-top-right-radius: 70px; /* Rounds the top-right corner */
+    background-image: url('/footer-img.png');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+/* Optional: Additional styling for footer text and image */
+.footer-text {
+    text-align: center;  /* Centers text horizontally */
+    margin-bottom: 20px; /* Adds space between text and image */
+}
+
+.footer-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;        /* Ensures the image stays within the parent width */
+}
+
+.imgLogo {
+    width: 100px;
+    margin-top: 30px;
+}
+
+.footer-links {
+    display: flex;            /* Enables Flexbox layout */
+    justify-content: center;  /* Centers the links horizontally */
+    gap: 20px;                /* Adds space between each link */
+    margin-top: 20px;         /* Adds some space above the links */
+}
+
+/* Optional: Style the links themselves */
+.footer-links a {
+    text-decoration: none;    /* Removes the underline from the links */
+    color: #fff;              /* White color for the links */
+    font-weight: 500;         /* Slightly bold text */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.footer-links a:hover {
+    color: #ddd;              /* Lighter color on hover */
+}

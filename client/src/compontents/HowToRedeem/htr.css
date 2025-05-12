@@ -1,0 +1,15 @@
+.HTR_parent {
+    margin-top: 7% !important;
+}
+
+.HTR_parent img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 821px) {
+    .HTR_parent {
+        height: 60vh;
+        margin-top: 0% !important;
+    }
+}

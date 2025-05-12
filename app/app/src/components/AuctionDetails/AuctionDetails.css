@@ -1,0 +1,666 @@
+/* Import slick-carousel css */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+.auction-parent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Change align-items to flex-start */
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+    min-height: 100vh; /* Change height to min-height */
+    top: 70px;
+    padding-top: 70px; /* Add padding at the top */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    padding-bottom: 70px;
+}
+
+.auction-parent .tradeBox {
+    min-width: 60%;
+    background-color: #0E111B;
+    border: 2px solid #21273a;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 9999 !important;
+    user-select: none;
+    color: #fff;
+    padding: 60px 15px 60px 15px;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.countdown-parent {
+    justify-content: center; /* Horizontally center the content */
+    text-align: center; /* Center text within the element */
+    width: 100%;
+}
+
+.countdown-parent .cd-text {
+    font-size: 72px;
+    margin: 0; /* Remove any default margin */
+    text-align: center; /* Ensure text is centered within the element */
+    letter-spacing: 6px;
+    word-spacing: 12px;
+    font-family: 'Cinzel', serif;
+}
+
+.countdown-parent .cd-title {
+    font-size: 36px;
+    margin: 0; /* Remove any default margin */
+    text-align: center; /* Ensure text is centered within the element */
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+.countdown-parent .cd-desc {
+    font-size: 16px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    line-height: 26px;
+}
+
+.countdown-parent .cd-desc span {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    word-spacing: 1px;
+    color: #d9534f;
+}
+
+.cd-gallery {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.cd-gallery .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cd-gallery img {
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    object-fit: contain;
+    cursor: pointer; /* Ensure the cursor is set to pointer */
+}
+
+/* Modal styling for zoomed image */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.bid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+    gap: 20px; /* Add some space between the columns */
+    width: 100%;
+    margin-top: 20px; /* Add some space above the bid-parent */
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bid-item {
+    background-color: #ebe0cc; /* Background color for bid items */
+    padding: 20px; /* Add padding inside each bid item */
+    border-radius: 10px; /* Add some rounded corners */
+    text-align: center; /* Center text inside bid items */
+    color: #000; /* Text color */
+}
+
+.bid-item h1, p {
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+}
+
+/* Disable image download */
+img {
+    -webkit-user-drag: none; /* Disable dragging the image in Safari/Chrome */
+    user-select: none; /* Disable text selection */
+}
+
+.input-button-wrapper {
+    display: flex;
+    align-items: center;
+    border: 2px solid #21273a; /* Create a border around the whole element */
+    border-radius: 10px; /* Add rounded corners */
+    overflow: hidden; /* Ensure content stays within the rounded corners */
+}
+
+.custom-input {
+    border: none; /* Remove default border */
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    flex: 1; /* Allow input to take up available space */
+    -moz-appearance: textfield; /* Remove number input spinner on Firefox */
+    background-color: #d9d9d3;
+    color: #000;
+}
+
+.custom-input::-webkit-outer-spin-button,
+.custom-input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Remove number input spinner on Chrome */
+    margin: 0; /* Remove margin */
+}
+
+.custom-button {
+    background-color: #ebe0cc !important;
+    color: #000 !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+    border: 1px solid #fff !important;
+}
+
+.custom-button:hover {
+    background-color: #353531 !important; /* Change color on hover */
+    color: #fff !important;
+}
+
+.bid-input-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between the columns */
+    width: 100%; /* Full width of the parent container */
+}
+
+.bid-input-parent .input-button-wrapper {
+    display: flex;
+    align-items: center;
+    border: 2px solid #21273a;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.bid-input-parent .custom-input {
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    flex: 1;
+    -moz-appearance: textfield;
+}
+
+.bid-input-parent .custom-input::-webkit-outer-spin-button,
+.bid-input-parent .custom-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bid-input-parent .custom-button {
+    background-color: #21273a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.bid-input-parent .custom-button:hover {
+    background-color: #0E111B;
+}
+
+.auction-parent .tabs {
+    display: flex;
+    justify-content: center; /* Center the tabs horizontally */
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #353531;
+    box-sizing: border-box;
+}
+
+.auction-parent .tab-button {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 10px 0; /* Adjust padding for a cleaner look */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Make each tab take up equal space */
+    text-align: center; /* Center text within each tab */
+}
+
+.auction-parent .specs-desc-tab {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.auction-parent .tab-button:hover,
+.auction-parent .tab-button.active {
+    background-color: #ebe0cc;
+    color: #000;
+}
+
+.auction-parent .tab-button.active {
+    border-bottom: 2px solid #0E111B;
+}
+
+.auction-parent .specs-list {
+    text-align: left; /* Aligns the text to the left */
+    list-style-type: disc; /* Adds bullets to the list items */
+    margin-left: 20px; /* Adds left margin for indentation */
+    padding-left: 0; /* Removes default padding from the <ul> */
+    margin-top: 20px;
+}
+
+.auction-parent .specs-list li {
+    margin-bottom: 8px; /* Adds space between each list item */
+    font-family: 'Cinzel', serif; /* Optional: Match font with other elements */
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Improve readability */
+    color: #fff; /* Set text color to white or adjust as per your theme */
+}
+
+.table-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+th {
+    background-color: #ebe0cc;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center; /* Center the header text */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #eceff1;
+}
+
+td {
+    color: #000;
+}
+
+td:first-child {
+    color: #000;
+}
+
+.parent-img-slider {
+    padding: 0 35px 0 35px;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        width: 90%;
+    }
+
+    th, td {
+        padding: 10px 12px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .table-container {
+        width: 100%;
+    }
+
+    .auction-parent .tradeBox {
+        min-width: 90%;
+    }
+
+    .countdown-parent .cd-text {
+        font-size: 36px; /* Further reduce font size for smaller screens */
+    }
+
+    .auction-parent .bid-item {
+        background-color: #353531; /* Background color for bid items */
+        padding: 15px 5px 15px 5px; /* Add padding inside each bid item */
+        border-radius: 10px; /* Add some rounded corners */
+        text-align: center; /* Center text inside bid items */
+        color: #fff; /* Text color */
+        font-size: 14px;
+    }
+
+    .auction-parent .cd-title {
+        font-size: 20px;
+    }
+
+    .auction-parent .cd-desc {
+        font-size: 14px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+
+    .auction-parent .specs-list li {
+        font-size: 14px;
+    }
+
+    .bid-input-parent {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .table-container {
+        width: 100%;
+    }
+
+    .auction-parent .tradeBox {
+        min-width: 90%;
+    }
+
+    .countdown-parent .cd-text {
+        font-size: 36px; /* Further reduce font size for smaller screens */
+    }
+
+    .auction-parent .bid-item {
+        background-color: #353531; /* Background color for bid items */
+        padding: 15px 5px 15px 5px; /* Add padding inside each bid item */
+        border-radius: 10px; /* Add some rounded corners */
+        text-align: center; /* Center text inside bid items */
+        color: #fff; /* Text color */
+        font-size: 14px;
+    }
+
+    .auction-parent .cd-title {
+        font-size: 20px;
+    }
+
+    .auction-parent .cd-desc {
+        font-size: 14px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+
+    .auction-parent .specs-list li {
+        font-size: 14px;
+    }
+
+    .bid-input-parent {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .table-container {
+        width: 100%;
+    }
+
+    .auction-parent {
+        padding: 20px;
+        left: 0; /* Remove fixed left offset */
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .table-container {
+        width: 100%;
+    }
+
+    .auction-parent {
+        padding: 20px;
+        left: 0; /* Remove fixed left offset */
+        width: 100%;
+    }
+
+    .auction-parent .tradeBox {
+        padding: 15px;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .countdown-parent .cd-text {
+        font-size: 28px; /* Further reduce font size for smaller screens */
+    }
+
+    .cd-gallery img {
+        max-height: 300px; /* Adjust image max height for smaller screens */
+    }
+
+    .bid-parent {
+        grid-template-columns: 1fr; /* Stack columns on top of each other on smaller screens */
+    }
+    
+    .bid-input-parent {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+
+    .auction-parent .cd-title {
+        font-size: 22px;
+    }
+
+    .auction-parent .cd-desc {
+        font-size: 14px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+
+    .auction-parent .specs-list li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+        width: 100%;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+        width: 100%;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .auction-parent .tradeBox {
+        margin-top: 15%;
+        padding: 30px 5px 30px 5px;
+    }
+
+    .auction-parent .bid-parent {
+        display: grid;
+        grid-template-columns: 1fr; /* Create two equal columns */
+        gap: 10px; /* Add some space between the columns */
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .auction-parent .bid-item {
+        background-color: #353531; /* Background color for bid items */
+        padding: 5px; /* Add padding inside each bid item */
+        border-radius: 10px; /* Add some rounded corners */
+        text-align: center; /* Center text inside bid items */
+        color: #fff; /* Text color */
+        font-size: 12px;
+    }
+
+    .auction-parent .cd-text {
+        font-size: 18px;
+    }
+
+    .auction-parent .cd-title {
+        font-size: 18px;
+    }
+
+    .auction-parent .cd-desc {
+        font-size: 12px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+
+    .auction-parent .specs-list li {
+        font-size: 14px;
+    }
+
+    .auction-parent .custom-input {
+        border: none; /* Remove default border */
+        padding: 10px;
+        font-size: 14px;
+        outline: none;
+        flex: 1; /* Allow input to take up available space */
+        -moz-appearance: textfield; /* Remove number input spinner on Firefox */
+        background-color: #d9d9d3;
+    }
+
+    .auction-parent .custom-button {
+        background-color: #a59b8d !important;
+        color: #000 !important;
+        border: none;
+        padding: 12px 10px;
+        font-size: 12px;
+        cursor: pointer;
+        outline: none;
+        transition: 0.2s;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+        width: 100%;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .auction-parent .tradeBox {
+        margin-top: 15%;
+        padding: 30px 5px 30px 5px;
+    }
+
+    .auction-parent .bid-parent {
+        display: grid;
+        grid-template-columns: 1fr; /* Create two equal columns */
+        gap: 10px; /* Add some space between the columns */
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .auction-parent .bid-item {
+        background-color: #353531; /* Background color for bid items */
+        padding: 5px; /* Add padding inside each bid item */
+        border-radius: 10px; /* Add some rounded corners */
+        text-align: center; /* Center text inside bid items */
+        color: #fff; /* Text color */
+        font-size: 12px;
+    }
+
+    .auction-parent .cd-text {
+        font-size: 18px;
+    }
+
+    .auction-parent .cd-title {
+        font-size: 18px;
+    }
+
+    .auction-parent .cd-desc {
+        font-size: 12px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+
+    .auction-parent .specs-list li {
+        font-size: 14px;
+    }
+
+    .auction-parent .custom-input {
+        border: none; /* Remove default border */
+        padding: 10px;
+        font-size: 14px;
+        outline: none;
+        flex: 1; /* Allow input to take up available space */
+        -moz-appearance: textfield; /* Remove number input spinner on Firefox */
+        background-color: #d9d9d3;
+    }
+
+    .auction-parent .custom-button {
+        background-color: #a59b8d !important;
+        color: #000 !important;
+        border: none;
+        padding: 12px 10px;
+        font-size: 12px;
+        cursor: pointer;
+        outline: none;
+        transition: 0.2s;
+    }
+}

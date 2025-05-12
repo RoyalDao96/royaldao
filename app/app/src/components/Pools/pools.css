@@ -1,0 +1,341 @@
+.pool-parent {
+    display: flex; /* Use flexbox to center children */
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Keep your positioning relative as needed */
+    left: 250px;
+    width: calc(100% - 250px);
+    padding: 0 5px 0 5px;
+    top: 95px;
+}
+
+.pool-parent .custom-table-container {
+    padding: 10px;
+    background-color: #141416;
+    border-radius: 10px;
+    width: 98%;
+    overflow-x: auto; /* Add horizontal scroll for smaller screens */
+}
+  
+.pool-parent .custom-table {
+    width: 100%;
+    min-width: 800px; /* Set a minimum width to prevent stacking */
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Spacing between rows */
+    color: #fff;
+}
+  
+/* Header styles */
+.pool-parent .custom-table thead {
+    background-color: transparent;
+}
+  
+.pool-parent .custom-table th {
+    font-weight: bold;
+    color: #000;
+    padding: 10px;
+    text-align: left;
+    position: relative; /* Positioning for the sorting icon */
+    cursor: pointer;
+}
+
+.pool-parent .custom-table th:not(:first-child) {
+    cursor: pointer;
+}
+
+.pool-parent .custom-table th.sorted-asc::after {
+    content: '▲'; /* Change icon for ascending */
+    font-size: 4px;
+    margin-left: 5px;
+    color: #757575;
+}
+  
+.pool-parent .custom-table th.sorted-desc::after {
+    content: '▼'; /* Change icon for descending */
+    font-size: 4px;
+    margin-left: 5px;
+    color: #757575;
+}
+
+.pool-parent .custom-table th::after {
+    content: '' !important; /* Remove the old arrow by setting content to an empty string */
+}
+  
+  /* Add icons for sorting/filtering in all headers except "POOL" and the last column */
+.pool-parent .custom-table th:not(:first-child):not(:last-child)::after {
+    content: '▼'; /* Example sorting/filtering icon */
+    font-size: 12px;
+    margin-left: 5px;
+    color: #757575; /* Adjust color */
+}
+  
+/* Specific styles for the "POOL" and the last column to remove the icon */
+.pool-parent .custom-table th:first-child::after,
+.pool-parent .custom-table th:last-child::after {
+  content: ''; /* Remove the icon from "POOL" and the last column */
+}
+  
+/* Row styles */
+.pool-parent .custom-table tr {
+    background-color: #1c1c1f;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
+/* Cell styles */
+.pool-parent .custom-table td {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+  
+  /* Pool cell with icons */
+  .pool-parent .token-pair {
+    display: flex;
+    align-items: center;
+}
+  
+.pool-parent .token-icon,
+.pool-parent .exchange-icon,
+.pool-parent .chain-icon {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+    margin-right: 8px;
+}
+
+.pool-parent .exchange,
+.pool-parent .chain {
+    display: flex;
+    align-items: center;
+}
+  
+.pool-parent .pool-name {
+    margin-left: 5px;
+    color: #ffffff; /* Adjust the text color */
+}
+
+.pool-parent .custom-table td {
+    padding: 15px;
+    text-align: left;
+    color: #ffffff; /* Set text color to white */
+}
+  
+/* Optional: Add icons for sorting/filtering */
+.pool-parent th::after {
+    content: '▼'; /* Example icon */
+    font-size: 12px;
+    margin-left: 5px;
+    color: #757575; /* Adjust color */
+}
+
+.pool-parent .custom-table th:last-child {
+    cursor: default; /* Default cursor to show it's not clickable */
+}
+
+.pool-parent .simulate-btn {
+    text-decoration: none;
+    padding: 7px 15px;
+    border: none;
+    outline: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #000;
+    width: 100%;
+}
+
+.pool-parent .simulate-btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #debd94;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.pool-parent .simulate-btn::before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #be0000, #ca5b00, #c9c500, #37c200,
+        #00b698, #0021c9, #be0095, #b90000
+    );
+    position: absolute;
+    top: -2px;
+    left: -5px;
+    background-size: 400%;
+    z-index: -1;
+    width: calc(102% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(7px);
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+    animation: glowing 25s linear infinite;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media (max-width: 1280px) {
+    .pool-parent .custom-table th,
+    .pool-parent .custom-table td {
+        min-width: 240px; /* Set a minimum width for each column */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    }
+}
+
+@media (max-width: 1024px) {
+    .pool-parent .custom-table th,
+    .pool-parent .custom-table td {
+        min-width: 240px; /* Set a minimum width for each column */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    }
+}
+
+@media (max-width: 912px) {
+    .pool-parent {
+        left: 0px;
+        width: 100%;
+        top: 100px;
+        margin: 0 auto;
+    }
+
+    .pool-parent .custom-table-container {
+        width: 100%;
+    }
+
+    .pool-parent .custom-table th,
+    .pool-parent .custom-table td {
+        min-width: 230px; /* Set a minimum width for each column */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    }
+}
+
+@media (max-width: 820px) {
+    .pool-parent {
+        left: 0px;
+        width: 100%;
+        top: 100px;
+        margin: 0 auto;
+    }
+
+    .pool-parent .custom-table-container {
+        width: 100%;
+    }
+
+    .pool-parent .custom-table th,
+    .pool-parent .custom-table td {
+        min-width: 220px; /* Set a minimum width for each column */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    }
+}
+  
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pool-parent {
+        left: 0px;
+        width: 100%;
+        top: 100px;
+        margin: 0 auto;
+    }
+
+    .pool-parent .custom-table-container {
+        width: 100%;
+    }
+
+    .custom-table th,
+    .custom-table td {
+      font-size: 14px;
+    }
+    
+    .pool-parent .custom-table th,
+    .pool-parent .custom-table td {
+        min-width: 200px; /* Set a minimum width for each column */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    }
+}
+
+@media (max-width: 540px) {
+    .pool-parent {
+        left: 0px;
+        width: 100%;
+        top: 100px;
+        margin: 0 auto;
+    }
+
+    .pool-parent .custom-table-container {
+        width: 100%;
+    }
+
+    .pool-parent .custom-table th,
+    .pool-parent .custom-table td {
+        min-width: 200px; /* Set a minimum width for each column */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    }
+}
+
+@media (max-width: 480px) {
+    .pool-parent {
+        left: 0px;
+        width: 100%;
+        top: 100px;
+        margin: 0 auto;
+    }
+
+    .pool-parent .custom-table-container {
+        width: 100%;
+    }
+
+    .pool-parent .custom-table th,
+    .pool-parent .custom-table td {
+        min-width: 200px; /* Set a minimum width for each column */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    }
+}
+
+@media (max-width: 375px) {
+    .pool-parent {
+        left: 0px;
+        width: 100%;
+        top: 100px;
+        margin: 0 auto;
+    }
+
+    .pool-parent .custom-table-container {
+        width: 100%;
+    }
+
+    .pool-parent .custom-table th,
+    .pool-parent .custom-table td {
+        min-width: 200px; /* Set a minimum width for each column */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    }
+}

@@ -1,0 +1,42 @@
+.peek .title {
+    color: #debd94;
+}
+
+.peek .desc {
+    color: #ccc;
+}
+
+.peek .title, .peek .desc {
+    text-align: center; /* Ensures text is centered regardless of column settings */
+}
+
+.peek .launch-game-tag {
+    width: auto; /* Adjust width to fit the content */
+    color: #fff;
+    outline: none;
+    width: 100%;
+    text-align: center; /* Ensures text inside the link is centered if needed */
+}
+
+.peek .launch-game-btn {
+    animation-delay: 620ms;
+    border: 3px solid #debd94;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    padding: 2px 15px 2px 15px;
+    transition: 250ms all ease-in-out;
+    width: 80%;
+}
+
+.peek .launch-game-btn:hover {
+    border: 3px solid #000;
+    background-color: #debd94;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .mockup-img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,263 @@
+.banner-image {
+    background-image: url("../../assets/webImages/heroBGImage.jpg");
+    background-size: cover;
+    height: 120vh;
+}
+
+.presales {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .gifFile {
+    width: 500px;
+    border-radius: 15%;
+}
+
+.parent-countdown {
+    display: flex;
+    justify-content: center;
+}
+
+.parent-countdown div {
+    flex-basis: 100px;
+}
+
+.parent-countdown div p {
+    font-size: 40px;
+    margin-bottom: -14px;
+}
+
+.presales {
+    border: 3px solid #debd94;
+    border-radius: 18px
+}
+
+.content h5 {
+     color: #debd94;
+     margin-top: 10px;
+}
+
+.col-lg h6 {
+    text-align: center;
+    color: #b6b6b6;
+    margin-top: 15px;
+}
+
+.progress-bg {
+	margin: 0 auto;
+	width: 100%;
+	height: 28px;
+	border-radius: 7px;
+    text-align: center;
+	border: 2px solid #debd94;
+}
+
+.progress-bar {
+	height: 26px;
+	border-radius: 7px;
+	float: left;
+    width: var(--progress-width, 10%) !important;
+	background-color: #debd94; 
+}
+
+.progress-bg h3.goal, .progress-bg h3.raised {
+	font-family: Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+	line-height: 28px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: inline;
+}
+
+.progress-bg h3.raised {
+	color: #000;
+	margin: 0 auto;
+}
+
+.progress-bg h3.goal {
+	color: #b2b2b2;
+    text-align: center;
+}
+
+body .progress-bg h3.raised {
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+.progress-bg h3.goal {
+	float: right;
+	display: inline;
+	padding: 0 25px 0 0;
+    text-align: center;
+}
+
+body .progress-bg div {
+	-webkit-animation: progress-bar 2s ease forwards;
+	-moz-animation: progress-bar 2s ease forwards;
+	-o-animation: progress-bar 2s ease forwards;
+	animation: progress-bar 2s ease forwards;
+}
+
+@-webkit-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@-moz-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@-o-keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+@keyframes progress-bar {
+    from { width: 0%; }
+    to { width: 50%; }
+}
+
+.worth .hr-lines{
+    position: relative;
+    font-size: 18px;
+  }
+
+.worth .hr-lines:before{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #b2b2b2;
+}
+
+.worth .hr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 130px;
+    background: #b2b2b2;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.current .hr-lines:before {
+    background: #debd94 !important;
+}
+
+.current .hr-lines:after {
+    background: #debd94 !important;
+}
+
+.presales-stage-text {
+    color: #debd94;
+}
+
+.presales-stage-text2 {
+    color: #b2b2b2;
+}
+
+@media only screen and (max-width: 821px) {
+    .worth .hr-lines:before{
+        content:" ";
+        display: block;
+        height: 2px;
+        width: 55px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: #b2b2b2;
+    }
+    
+    .worth .hr-lines:after{
+        content:" ";
+        height: 2px;
+        width: 55px;
+        background: #b2b2b2;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+  
+.input-container input {
+    padding: 12px 15px 12px 15px;
+    border: none;
+    border-radius: 9px;
+    flex: 1;
+    transition: 200ms all ease-in-out;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.input-container input:focus {
+    outline: none;
+    border: 3px solid rgba(222, 189, 148, 1);
+}
+  
+.input-container .icon {
+    width: 45px;
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    cursor: pointer;
+}
+
+.buy-now-btn {
+    padding: 5px;
+    border-radius: 9px;
+    background-color: #debd94;
+    font-weight: bold;
+    transition: 300ms all ease-in-out;
+}
+
+.buy-now-btn:hover {
+    box-shadow: 0 0 12px #debd94;
+}
+
+.presale-stages {
+    font-size: 18px;
+}

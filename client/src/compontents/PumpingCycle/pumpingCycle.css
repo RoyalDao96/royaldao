@@ -1,0 +1,14 @@
+.pumpingCycle_parent {
+    height: 120vh !important; 
+    background-color: #000 !important;
+}
+
+.pumpingCycle_parent img {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 821px) {
+    .pumpingCycle_parent {
+        height: 55vh !important;
+    }
+}

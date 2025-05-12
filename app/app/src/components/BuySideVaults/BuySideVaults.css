@@ -1,0 +1,110 @@
+.buyside-parent .cards-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap as needed */
+    justify-content: flex-start; /* Aligns items to the start of the flex container */
+    padding: 20px;
+}
+  
+.buyside-parent .card-container {
+    flex: 0 1 calc(33.33% - 20px); /* Takes up about a third of the space minus margin */
+    margin: 10px;
+}
+
+.buyside-parent .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+  
+.buyside-parent .offer-section, .buyside-parent .for-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.buyside-parent .arrow {
+    font-size: 24px;
+    color: #a58b8d;
+}
+  
+.buyside-parent  .offer-amount, .buyside-parent  .for-amount {
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+.buyside-parent  .offer-currency, .buyside-parent  .for-currency {
+    font-size: 12px;
+    color: #c7c5c2;
+}
+  
+.buyside-parent .offer-section {
+    display: flex;
+    align-items: center; /* Ensures vertical centering */
+}
+  
+.buyside-parent .offer-image {
+    width: 50px;
+    border-radius: 50%; /* Makes the image round */
+    margin-right: 10px; /* Space between the image and the text */
+    margin-bottom: 10px;
+}
+
+.buyside-parent .offer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.buyside-parent .bsv_title {
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.buyside-parent .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.buyside-parent .stable {
+    margin-top: 5%;
+}
+
+.buyside-parent .of2 {
+    border: 2px solid #948779;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    min-width: 45%;
+}
+
+.buyside-parent .pool-owner {
+    margin-bottom: 30px;
+    border: 2px solid #948779;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+}
+
+.buyside-parent .address-wrapper {
+    display: flex;          /* Enables flexbox */
+    align-items: center;    /* Vertically center aligns the children */
+    justify-content: center; /* Optional: Adjusts the spacing between children */
+    margin-top: -10px;
+}
+
+.buyside-parent .copyImg {
+    filter: invert(100%);
+    width: 20px;
+}
+
+@media (max-width: 768px) {
+    .buyside-parent  .cards-row {
+      flex-direction: column; /* Stacks the flex items vertically */
+    }
+  
+    .buyside-parent  .card-container {
+      flex: 1 0 100%; /* Each card will take full width of the container */
+      margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+}

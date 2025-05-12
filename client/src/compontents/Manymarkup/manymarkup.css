@@ -1,0 +1,83 @@
+.manymarkup {
+    margin-top: 12%;
+    margin-bottom: 5%;
+}
+
+.manymarkup .title {
+    color: #debd94;
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+
+.manymarkup .desc {
+    color: #ccc;
+    font-size: 24px;
+    letter-spacing: 8px;
+}
+
+.manymarkup .title, .manymarkup .desc {
+    text-align: center; /* Ensures text is centered regardless of column settings */
+}
+
+.manymarkup .launch-game-tag {
+    width: auto; /* Adjust width to fit the content */
+    color: #fff;
+    outline: none;
+    width: 100%;
+    text-align: center; /* Ensures text inside the link is centered if needed */
+    opacity: 0.5;
+}
+
+.manymarkup .launch-game-tag2 {
+    width: auto; /* Adjust width to fit the content */
+    color: #fff;
+    outline: none;
+    width: 100%;
+    text-align: center; /* Ensures text inside the link is centered if needed */
+}
+
+.manymarkup .launch-game-btn {
+    animation-delay: 620ms;
+    border: 3px solid #debd94;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    padding: 2px 15px 2px 15px;
+    transition: 250ms all ease-in-out;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.manymarkup .launch-game-btn:hover {
+    border: 3px solid #000;
+    background-color: #debd94;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .manymarkup .mockup-img {
+        width: 100%;
+    }
+
+    .row.w-md-50 {
+        margin-bottom: 5%;
+    }
+
+    .manymarkup .title {
+        color: #debd94;
+        font-size: 34px;
+        letter-spacing: 10px;
+    }
+    
+    .manymarkup .desc {
+        color: #ccc;
+        font-size: 18px;
+        margin-top: 7%;
+    }
+}
+
+@media (min-width: 768px) {
+    .row.w-md-50 {
+        width: 75%;
+    }
+}

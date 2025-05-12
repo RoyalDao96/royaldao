@@ -1,0 +1,656 @@
+/* Container that controls the width */
+.pool-detail-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin-left: 450px;
+  box-sizing: border-box;  /* Include padding in width calculation */
+}
+
+.pool-parent-de {
+  margin-top: 100px;
+}
+
+.pool-detail-header {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pool-header-left {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.pool-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pool-type-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.pool-type-button {
+  background-color: transparent;
+  border: 1px solid #ebe0cc;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.pool-type-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pool-header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.stat-box {
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  width: 170px;
+}
+
+.stat-box h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  border: 1px solid #ebe0cc;
+  padding: 2px;
+  border-radius: 6px;
+}
+
+.stat-box p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: white;
+}
+
+/* Flex layout for pool-info and pool-deposit */
+.pool-info-deposit-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Ensure no equal height */
+  gap: 40px;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+@media (max-width: 1280px) {
+  .pool-detail-container {
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+    margin-left: 450px;
+    box-sizing: border-box;  /* Include padding in width calculation */
+  }
+
+  .pool-deposit {
+    width: 100%;
+  }
+
+  .pool-info-deposit-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pool-info {
+    width: 100% !important;
+  }
+  .pool-detail-header {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -5px;
+  }
+
+  .pool-header-left {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pool-detail-container {
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+    margin-left: 300px;
+    box-sizing: border-box;  /* Include padding in width calculation */
+  }
+
+  .pool-deposit {
+    width: 100%;
+  }
+
+  .pool-info-deposit-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pool-info {
+    width: 100% !important;
+  }
+  .pool-detail-header {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -5px;
+  }
+
+  .pool-header-left {
+    text-align: center;
+  }
+}
+
+@media (max-width: 912px) {
+  .pool-detail-container {
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+    margin-left: 120px;
+    box-sizing: border-box;  /* Include padding in width calculation */
+  }
+
+  .pool-deposit {
+    width: 100%;
+  }
+
+  .pool-info-deposit-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pool-info {
+    width: 100% !important;
+  }
+  .pool-detail-header {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -5px;
+  }
+
+  .pool-header-left {
+    text-align: center;
+  }
+}
+
+@media (max-width: 853px) {
+  .pool-detail-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: 0px;
+    box-sizing: border-box;  /* Include padding in width calculation */
+  }
+}
+
+@media (max-width: 820px) {
+  .pool-detail-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: 0px;
+    box-sizing: border-box;  /* Include padding in width calculation */
+  }
+}
+
+@media (max-width: 768px) {
+  .pool-info-deposit-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pool-info {
+    width: 100% !important;
+  }
+  .pool-detail-header {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -5px;
+  }
+
+  .pool-header-left {
+    text-align: center;
+  }
+
+  .pool-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .pool-type-buttons {
+    margin-bottom: 20px;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .pool-header-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .stat-box {
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    width: 120px;
+  }
+
+  .stat-box h2 {
+    font-size: 14px;
+  }
+
+  .stat-box p {
+    font-size: 12px;
+  }
+
+  .pool-deposit {
+    width: 100%; /* Make sure pool-deposit doesn't overflow */
+  }
+}
+
+.pool-info {
+  flex: 2;
+  padding: 20px;
+}
+
+.pool-info .tvl-title {
+  color: #999;
+}
+
+.pool-info .tvl-value {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.pool-info .pl-text {
+  color: #999;
+}
+
+.pool-info p {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.liquidity-allocation {
+  margin: 20px 0;
+}
+
+.liquidity-allocation .la-title {
+  color: #999;
+}
+
+.liquidity-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.liquidity-item .la-title {
+  color: #999;
+}
+
+.liquidity-item img {
+  width: 32px;
+  margin-right: 10px;
+}
+
+.liquidity-item span {
+  flex-grow: 1;
+  color: white;
+  font-weight: bold;
+}
+
+/* Token name and address container */
+.token-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: white;
+}
+
+/* Token name and address are truly side by side */
+.token-name {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.token-name a {
+  background-color: #f5f5f5;
+  color: #999;
+  border-radius: 5px;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.token-name a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Balance and percentage styling */
+.liquidity-item p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.additional-info {
+  margin: 20px 0;
+}
+
+.additional-info p {
+  font-size: 16px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pool-chart,
+.supported-platforms {
+  margin-top: 30px;
+}
+
+.pool-chart h3 {
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.chart-buttons,
+.platform-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chart-buttons a,
+.platform-buttons button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 150px;
+}
+
+.chart-buttons img,
+.platform-buttons img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .pool-detail-container {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+    box-sizing: border-box; /* Ensure width calculation includes padding */
+  }
+  
+  .pool-parent-de {
+    margin-top: 100px;
+    margin-left: 15px;
+  }
+
+  .chart-buttons,
+  .platform-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .chart-buttons button,
+  .platform-buttons button {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .chart-buttons img,
+  .platform-buttons img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Pool Deposit Section */
+.pool-deposit {
+  flex: 1.5;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  box-sizing: border-box;
+}
+
+.pool-deposit h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.pool-deposit h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.pool-deposit p {
+  font-size: 14px;
+  color: #888;
+}
+
+.pool-deposit nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.pool-deposit nav button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  z-index: 999999;
+}
+
+.pool-deposit nav button.active {
+  border-bottom: 2px solid #333;
+}
+
+.deposit-box {
+  margin-top: 20px;
+}
+
+.deposit-box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.token-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  position: relative; /* Ensure proper positioning */
+}
+
+.token-input img {
+  width: 32px;
+}
+
+.token-input p {
+  flex: 1;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.token-input input {
+  flex: 1;
+  font-size: 18px;
+  text-align: right;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #333;
+  z-index: 999999; /* Ensure input is on top */
+  pointer-events: auto; /* Ensure input is clickable */
+}
+
+.token-input-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  width: 50%;
+  margin-left: auto; /* Align buttons to the right */
+  margin-bottom: 20px;
+}
+
+.token-input-buttons button {
+  flex: 1;
+  padding: 2px;
+  font-size: 12px;
+  margin-right: 5px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 999999;
+}
+
+.token-input-buttons button:last-child {
+  margin-right: 0;
+}
+
+.token-input-buttons button:hover {
+  background-color: #ccc;
+}
+
+.deposit-btn {
+  width: 100%;
+  background-color: #888;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.deposit-btn:hover {
+  background-color: #666;
+}
+
+/* Additional UI elements */
+.balanced-deposit-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.balanced-deposit-toggle p {
+  font-size: 14px;
+  color: #333;
+}
+
+.balanced-deposit-switch {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.balanced-deposit-switch::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  transition: 0.3s;
+}
+
+.balanced-deposit-switch.active {
+  background-color: #4caf50;
+}
+
+.balanced-deposit-switch.active::before {
+  left: calc(100% - 20px);
+}
+
+.token-input-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  width: 100%; /* Adjust width to fit both balance and buttons */
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.balance-label {
+  flex: 2; /* Take space on the left side */
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+}
+
+.token-input-buttons button {
+  flex: 1; /* Buttons will share space on the right */
+  padding: 8px;
+  font-size: 12px;
+  margin-right: 5px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.token-input-buttons button:last-child {
+  margin-right: 0;
+}
+
+.token-input-buttons button:hover {
+  background-color: #ccc;
+}

@@ -1,0 +1,42 @@
+.swiper {
+    width: 350px;
+    height: 350px;
+}
+  
+.mySwiperRuby .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+  
+.mySwiperRuby .swiper-slide:nth-child(1n) {
+    background-image: url('../../../assets/webImages/img7.png');
+    background-size: cover;
+    border: 2px solid #debd94;
+}
+  
+.mySwiperRuby .swiper-slide:nth-child(2n) {
+    background-image: url('../../../assets/webImages/img6.png');
+    background-size: cover;
+}
+  
+.mySwiperRuby .swiper-slide:nth-child(3n) {
+    background-image: url('../../../assets/webImages/img8.png');
+    background-size: cover;
+}
+  
+.mySwiperRuby .swiper-slide:nth-child(4n) {
+    background-image: url('../../../assets/webImages/img2.png');
+    background-size: cover;
+}
+
+@media screen and (max-width: 854px) {
+    .swiper {
+        width: 270px;
+        height: 270px;
+    }
+}

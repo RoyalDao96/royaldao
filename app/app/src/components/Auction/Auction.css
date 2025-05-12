@@ -1,0 +1,489 @@
+.auction-parent1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Change align-items to flex-start */
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+    min-height: 100vh; /* Change height to min-height */
+    top: 70px;
+    padding-top: 70px; /* Add padding at the top */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    padding-bottom: 70px;
+}
+
+.auction-parent1 .tradeBox {
+    min-width: 80%;
+    max-width: 100%;
+    background-color: #0E111B;
+    border: 2px solid #21273a;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 9999 !important;
+    user-select: none;
+    color: #fff;
+    padding: 60px 15px 60px 15px;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+.auction-parent1 .tabs {
+    display: flex;
+    justify-content: center; /* Center the tabs horizontally */
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #353531;
+    box-sizing: border-box;
+}
+
+.auction-parent1 .tab-button {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 10px 0; /* Adjust padding for a cleaner look */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Make each tab take up equal space */
+    text-align: center; /* Center text within each tab */
+}
+
+.auction-parent1 .tab-button:hover,
+.auction-parent1 .tab-button.active {
+    background-color: #353531;
+    color: #fff;
+}
+
+.auction-parent .tab-button.active {
+    border-bottom: 2px solid #353531;
+}
+
+.lot-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust the gap between the columns as needed */
+    padding: 20px; /* Optional: Add some padding if desired */
+}
+
+.lot-parent .card-area h2 {
+    font-size: 20px;
+}
+
+.lot-parent .next-lot {
+    opacity: 0.4;
+}
+
+.green-dot {
+    display: inline-block;
+    width: 10px; /* Width of the dot */
+    height: 10px; /* Height of the dot */
+    background-color: green; /* Color of the dot */
+    border-radius: 50%; /* Makes the element circular */
+    margin-left: 10px; /* Space between the text and the dot */
+}
+
+.test .card {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 10px;
+    
+}
+
+.test .card:hover .card-image img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.test .card:hover .card-image img {
+    transform: scale(1.03); /* Slightly zooms in the entire card */
+}
+
+.test .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #eae0cc;
+}
+
+.test .time-icon {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.test .time-icon span {
+    font-size: 16px;
+}
+
+.test .time-icon svg {
+    margin-right: 5px;
+}
+
+.test .heart-icon {
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+}
+
+.test .card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #eae0cc;
+}
+
+.test .card-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.test .card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.test .item-name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.test .item-price {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.test .edit-bid-button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.test .edit-bid-button:hover {
+    background-color: #e6e6e6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1280px) {
+    .auction-parent1 .tradeBox {
+        padding: 20px 10px;
+        min-width: 95%;
+    }
+
+    .auction-parent1 .tabs {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #353531;
+        box-sizing: border-box;
+    }
+
+    .auction-parent1 .tab-button {
+        padding: 10px 0;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .lot-parent {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .auction-parent1 .tradeBox {
+        padding: 20px 10px;
+        min-width: 95%;
+    }
+
+    .auction-parent1 .tabs {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #353531;
+        box-sizing: border-box;
+    }
+
+    .auction-parent1 .tab-button {
+        padding: 10px 0;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .lot-parent {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 912px) {
+    .auction-parent1 {
+        left: 0;
+        width: 100%;
+        padding-top: 15%;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 0;
+        padding-bottom: 20px;
+    }
+
+    .auction-parent1 .tradeBox {
+        padding: 20px 10px;
+        min-width: 100%;
+    }
+
+    .auction-parent1 .tabs {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #353531;
+        box-sizing: border-box;
+    }
+
+    .auction-parent1 .tab-button {
+        padding: 10px 0;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .lot-parent {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 60%;
+    }
+
+    .test {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .test .card {
+        width: 100%;
+        background-color: #f5f5f5;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        position: relative;
+        cursor: pointer;
+        padding-bottom: 10px;
+        margin-top: 7%;
+    }
+}
+
+@media (max-width: 820px) {
+    .auction-parent1 {
+        left: 0;
+        width: 100%;
+        padding-top: 15%;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 0;
+        padding-bottom: 20px;
+    }
+
+    .auction-parent1 .tradeBox {
+        padding: 20px 10px;
+        min-width: 100%;
+    }
+
+    .auction-parent1 .tabs {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #353531;
+        box-sizing: border-box;
+    }
+
+    .auction-parent1 .tab-button {
+        padding: 10px 0;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .lot-parent {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 60%;
+    }
+
+    .test {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .test .card {
+        width: 100%;
+        background-color: #f5f5f5;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        position: relative;
+        cursor: pointer;
+        padding-bottom: 10px;
+        margin-top: 7%;
+    }
+}
+
+@media (max-width: 768px) {
+    .auction-parent1 {
+        left: 0;
+        width: 100%;
+        padding-top: 15%;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 0;
+        padding-bottom: 20px;
+    }
+
+    .auction-parent1 .tradeBox {
+        padding: 20px 10px;
+        min-width: 100%;
+    }
+
+    .auction-parent1 .tabs {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #353531;
+        box-sizing: border-box;
+    }
+
+    .auction-parent1 .tab-button {
+        padding: 10px 0;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .lot-parent {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 60%;
+    }
+
+    .test {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .test .card {
+        width: 100%;
+        background-color: #f5f5f5;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        position: relative;
+        cursor: pointer;
+        padding-bottom: 10px;
+        margin-top: 7%;
+    }
+}
+
+@media (max-width: 480px) {
+    .auction-parent1 {
+        padding: 15px 5px;
+    }
+
+    .auction-parent1 .tradeBox {
+        padding: 15px 10px;
+        min-width: 100%;
+        margin-top: 30%;
+    }
+
+    .auction-parent1 .tab-button {
+        font-size: 12px;
+        padding: 8px 0;
+        width: 100%;
+    }
+
+    .lot-parent {
+        grid-template-columns: 1fr;
+        gap: 1px;
+        padding: 5px;
+        margin-left: 72%;
+    }
+
+    .test {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .test .card {
+        width: 100%;
+        background-color: #f5f5f5;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        position: relative;
+        cursor: pointer;
+        padding-bottom: 10px;
+        margin-top: 7%;
+    }
+}
+
+@media (max-width: 375px) {
+    .auction-parent1 {
+        padding: 15px 5px;
+    }
+
+    .auction-parent1 .tradeBox {
+        padding: 15px 10px;
+        min-width: 100%;
+    }
+
+    .auction-parent1 .tab-button {
+        font-size: 12px;
+        padding: 8px 0;
+        width: 100%;
+    }
+
+    .lot-parent {
+        grid-template-columns: 1fr;
+        gap: 1px;
+        padding: 5px;
+        margin-left: 75%;
+    }
+    
+    .test {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .test .card {
+        width: 100%;
+        background-color: #f5f5f5;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        position: relative;
+        cursor: pointer;
+        padding-bottom: 10px;
+        margin-top: 7%;
+    }
+}

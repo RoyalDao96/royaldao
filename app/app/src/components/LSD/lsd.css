@@ -1,0 +1,33 @@
+.parent-lsd {
+    gap: 50px;
+}
+
+.lsd-tradeBox {
+    margin-top: -10% !important;
+    width: 100%;
+}
+
+.parent-lsd .tabs {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.parent-lsd .bsv_title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.bsv_title {
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 10px !important;
+}
+
+.bp2 {
+    display: flex;        /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between the children */
+    align-items: center;  /* Vertically center the content */
+    width: 100%;          /* Full width of the container */
+    margin-bottom: 10px;  /* Optional: space between rows */
+}

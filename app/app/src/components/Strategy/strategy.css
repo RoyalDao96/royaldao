@@ -1,0 +1,307 @@
+.strategy-parent {
+    display: flex; /* Use flexbox to center children */
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Keep your positioning relative as needed */
+    left: 250px;
+    width: calc(100% - 250px);
+    height: 250vh;
+    padding: 0 5px 0 5px;
+}
+
+.strategy-parent .tabs-strategy {
+    display: flex;
+    flex-direction: row;  /* Layout tabs horizontally */
+    justify-content: space-around;  /* Adjusts the spacing around the tabs */
+    box-sizing: border-box;  /* Includes padding and border in the element's total width */
+    margin-bottom: 7%  !important;
+    margin-top: -15% !important;
+}
+
+.strategy-parent .mission-select-container {
+    display: flex;
+    flex-direction: column; /* Stacking for mobile */
+    width: 100%; /* Full width of its container */
+    max-width: 1500px; /* Maximum width as per your design */
+    background-size: cover;
+    overflow: hidden; /* Prevents overflow */
+    color: #fff;
+    background-image: url('../../images/s-bg.jpg');
+    background-size: cover; /* Cover the entire card area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    margin-top: -5%;
+}
+  
+.strategy-parent .operations-panel {
+    flex: 0 0 45% !important; /* Locks the width to 40% of the parent container */
+    /* background: rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.strategy-parent .tag {
+    margin-top: 2%;
+    width: 100% !important;
+    text-align: left;
+}
+
+.strategy-parent .tag h1 {
+    border: 2px solid #ddbc91;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ddbc91;
+}
+
+.strategy-parent p {
+    font-weight: normal;
+}
+
+.strategy-parent ul {
+    list-style-type: disc;
+}
+  
+.strategy-parent .quick-match-header {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+}
+  
+.strategy-parent .missions-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+  
+.strategy-parent .mission-card {
+    flex: 1 1 50%; /* Each card takes half of the row's width */
+    padding: 20px 15px 5px 15px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    text-align: center;
+    cursor: pointer;
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 10px;
+    border: 2px solid #2f3337;
+    background-size: cover; /* Cover the entire card area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+  
+.strategy-parent .mission-card.active {
+    border: 2px solid #ddbc91;
+ }
+  
+ .strategy-parent .mission-info {
+    display: flex; /* Continues to use flexbox for internal layout */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: flex-start; /* Aligns items to the start, maintaining left text alignment */
+    width: 100%; /* Full width to ensure it fills its container */
+    padding: 20px;
+    overflow-y: auto; /* Allows vertical scrolling if the content is too long */
+    color: #fff; /* Optional: sets text color for readability */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    margin: 0; /* Removes any external margins */
+    flex-grow: 1; /* Allows the container to expand to fit available space */
+}
+
+.mission-info h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+}
+  
+.strategy-parent .mission-objectives, .strategy-parent .rewards {
+    margin-top: 20px;
+}
+  
+.strategy-parent .rewards span {
+    display: inline-block;
+    background: #333;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.structure-parameters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    justify-content: start;
+    margin-top: 2%;
+  }
+  
+.strategy-parent .parameter-box {
+    background-color: transparent;
+    border: 1px solid #ddbc91;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #fff;
+  }
+  
+.strategy-parent .parameter-box strong {
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+.strategy-parent .smart-contract-parameters {
+    width: 100%;
+    max-width: 600px;
+}
+  
+.strategy-parent .smart-contract-parameters h3 {
+    font-size: 20px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+  
+.strategy-parent .product-contract {
+    font-size: 14px;
+    color: #666;
+}
+  
+.strategy-parent .contract-address {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #ddbc91;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #fff;
+}
+  
+.strategy-parent .contract-address span {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+  
+.strategy-parent .eth-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+  
+.strategy-parent .copy-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    filter: invert(1);
+    cursor: pointer;
+}
+  
+.strategy-parent .contract-address a {
+    text-decoration: none;
+}
+  
+.strategy-parent .contract-address a:hover .copy-icon {
+    opacity: 0.7;
+}
+  
+.strategy-parent .payoff-scenarios {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1%;
+}
+  
+.strategy-parent .payoff-scenarios h3 {
+    font-size: 20px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+  
+.strategy-parent .scenario {
+    background-color: #ddbc91;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+  
+.strategy-parent .scenario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+  
+.strategy-parent .arrow {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .strategy-parent .mission-select-container {
+        height: 100vh;
+    }
+
+    .strategy-parent .missions-row {
+        width: 100%;
+    }
+
+    .strategy-parent .tabs-strategy {
+        width: 100%;  /* Explicitly set to 100% to ensure it takes full width */
+        display: flex;
+        flex-direction: row;  /* Layout tabs horizontally */
+        justify-content: space-around;  /* Adjusts the spacing around the tabs */
+        box-sizing: border-box;  /* Includes padding and border in the element's total width */
+        margin-bottom: 7%  !important;
+        margin-top: 7% !important;
+    }
+
+    .strategy-parent .tab-btn-strategy {
+        font-size: 12px !important;
+    }
+
+    .strategy-parent .tag {
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+}
+
+@media (min-width: 768px) {
+    .strategy-parent .mission-select-container {
+      flex-direction: row; /* Horizontal layout for larger screens */
+    }
+  
+    .strategy-parent .mission-info {
+        /* Adjust the width as per the requirement, e.g., keeping 55% */
+        flex: 0 0 55%;
+        justify-content: flex-start; /* Reset to start if it affects internal elements alignment */
+    }
+}
+
+@media (max-width: 1024px) {
+    .strategy-parent {
+        left: 130px;
+        width: 70%;
+        top: 100px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 912px) {
+    .strategy-parent {
+        left: 0px;
+        width: 100%;
+        top: 100px;
+    }
+}

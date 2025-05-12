@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.hero-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
+    gap: 0px; /* Adds spacing between the columns */
+    align-items: stretch; /* Ensures columns stretch to fill the grid */
+    width: fit-content; /* Makes the grid container fit its content */
+    margin: 0 auto; /* Centers the grid container horizontally */
+    height: 100%; /* Ensures the grid container takes the full available height */
+}
+  
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally within this grid item */
+    align-items: center; /* Vertically centers the image within this grid item */
+    height: 100%; /* Ensures the container takes the full height for proper centering */
+}
+  
+.content-container {
+    display: flex;
+    flex-direction: column; /* Stack the title and FlipWordsHero vertically */
+    justify-content: center; /* Center the title and FlipWordsHero vertically */
+    align-items: flex-start; /* Align content to the left */
+    height: 100%; /* Ensures the container takes the full height for proper centering */
+}
+
+body {
+    font-family: "Playfair Display SC", serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    letter-spacing: 3px !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+.imgHero {
+    animation: rotate 100s linear infinite;
+}
+  
+@media (max-width: 1024px) {
+    .title {
+        font-size: 78px;
+    }
+    
+    .title2-div { /* This is coming from heroText */
+        margin-top: 0px; 
+    }
+
+    .title2 {
+        font-size: 54px; /* This is coming from heroText */
+    }
+}
+
+@media (max-width: 912px) {
+    .title {
+        font-size: 58px;
+    }
+    
+    .title2-div { /* This is coming from heroText */
+        margin-top: 0px; 
+    }
+
+    .title2 {
+        font-size: 34px; /* This is coming from heroText */
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 58px;
+    }
+    
+    .title2-div { /* This is coming from heroText */
+        margin-top: 0px; 
+    }
+
+    .title2 {
+        font-size: 34px; /* This is coming from heroText */
+    }
+}
+
+@media (max-width: 540px) {
+    .title {
+        font-size: 38px;
+    }
+    
+    .title2-div { /* This is coming from heroText */
+        margin-top: 0px; 
+    }
+
+    .title2 {
+        font-size: 24px; /* This is coming from heroText */
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        width: 90% !important;
+        font-size: 30px;
+        margin-bottom: 20px !important;
+    }
+    
+    .title2-div { /* This is coming from heroText */
+        margin-top: 0px; 
+    }
+
+    .title2 {
+        font-size: 26px; /* This is coming from heroText */
+    }
+}
+
+@media (max-width: 375px) {
+    .title {
+        font-size: 28px;
+        margin-bottom: 20px !important;
+    }
+    
+    .title2-div { /* This is coming from heroText */
+        margin-top: 0px; 
+    }
+
+    .title2 {
+        font-size: 24px; /* This is coming from heroText */
+    }
+}
+
+@media (max-width: 344px) {
+    .title {
+        font-size: 26px;
+    }
+    
+    .title2-div { /* This is coming from heroText */
+        margin-top: 0px; 
+    }
+
+    .title2 {
+        font-size: 20px; /* This is coming from heroText */
+    }
+}

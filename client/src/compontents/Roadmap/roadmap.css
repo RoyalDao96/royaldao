@@ -1,0 +1,14 @@
+.roadmap_parent {
+    height: 60vh;
+}
+
+.roadmap_parent img {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 821px) {
+    .roadmap_parent {
+        height: 20vh;
+        margin-top: 5%;
+    }
+}

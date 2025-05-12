@@ -1,0 +1,167 @@
+.parent-phrase2 {
+    padding: 100px 50px 140px 50px;
+    border-radius: 25px;
+    animation: neon-border 5s infinite;
+    width: 50%; /* Ensure full width */
+    border: 2px solid #51585f;
+    background-image: url('/bg2.png');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+}
+
+.title, .title2 {
+    width: 100%; /* Ensure full width */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any padding if necessary */
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.phraseDesc {
+    width: 100% !important;
+    text-align: center;
+}
+
+.radiating-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(127, 131, 137, 0.9), rgba(127, 131, 137, 0.6), rgba(127, 131, 137, 0));
+    border-radius: 50%;
+    filter: blur(170px); /* Heavy blur for a radiating effect */
+    z-index: 999; /* Make sure it's behind the content */
+}
+
+@media (max-width: 1280px) {
+    .parent-phrase2 {
+        width: 97%;
+        padding: 20px 5px 20px 5px;
+    }
+
+    .parent-phrase2 .title2 {
+        font-size: 22px;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .parent-phrase2 {
+        width: 97%;
+        padding: 20px 5px 20px 5px;
+    }
+
+    .parent-phrase2 .title {
+        font-size: 42px;
+        margin-top: 5%;
+    }
+
+    .parent-phrase2 .title2 {
+        font-size: 22px;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 912px) {
+    .parent-phrase2 {
+        width: 97%;
+        padding: 20px 5px 20px 5px;
+    }
+
+    .parent-phrase2 .title {
+        font-size: 36px;
+        margin-top: 5%;
+    }
+
+    .parent-phrase2 .title2 {
+        font-size: 18px;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .parent-phrase2 {
+        width: 97%;
+        padding: 20px 5px 20px 5px;
+    }
+
+    .parent-phrase2 .title {
+        font-size: 36px;
+        margin-top: 5%;
+    }
+
+    .parent-phrase2 .title2 {
+        font-size: 18px;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .parent-phrase1 {
+        width: 97%;
+        padding: 20px 5px 20px 5px;
+    }
+
+    .parent-phrase2 .title {
+        font-size: 24px;
+        margin-top: 5%;
+    }
+
+    .parent-phrase2 .title2 {
+        font-size: 16px;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .parent-phrase2 {
+        width: 97%;
+        padding: 20px 5px 20px 5px;
+    }
+
+    .parent-phrase2 .title {
+        font-size: 24px;
+        margin-top: 5%;
+    }
+
+    .parent-phrase2 .title2 {
+        font-size: 16px;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .parent-phrase2 {
+        width: 97%;
+        padding: 20px 5px 20px 5px;
+    }
+
+    .parent-phrase2 .title {
+        font-size: 22px;
+        margin-top: 5%;
+    }
+
+    .parent-phrase2 .title2 {
+        font-size: 14px;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 344px) {
+    .parent-phrase2 {
+        width: 97%;
+        padding: 20px 5px 20px 5px;
+    }
+
+    .parent-phrase2 .title {
+        font-size: 22px;
+        margin-top: 5%;
+    }
+
+    .parent-phrase2 .title2 {
+        font-size: 14px;
+        padding: 0px !important;
+    }
+}

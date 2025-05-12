@@ -1,0 +1,96 @@
+.carousel-wrapper-parent {
+    position: relative;
+    width: 90%; /* Updated width */
+    margin: 0 auto; /* Center horizontally */
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .carousel-wrapper {
+    width: 100%; /* Full width of its parent */
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+  }
+  
+  .carousel-wrapper:active {
+    cursor: grabbing;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    box-sizing: border-box;
+    padding: 10px;
+    user-select: none; /* Prevent text selection */
+    min-width: 33.33%; /* Show 3 items per view by default */
+  }
+  
+  /* Show 1 card per view on mobile screens */
+  @media (max-width: 767px) {
+    .carousel-item {
+      min-width: 100%;
+    }
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+
+@media (max-width: 1280px) {
+    .carousel-item {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .carousel-item {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 820px) {
+    .carousel-item {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 344px) {
+    .carousel-item {
+        min-width: 100%;
+    }
+}
+  
+/* Show 1 card per view on mobile screens */
+@media (max-width: 767px) {
+    .carousel-item {
+      min-width: 100%;
+    }
+}
+  

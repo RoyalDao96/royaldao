@@ -1,0 +1,377 @@
+.stake-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+    height: 100vh;
+    top: 70px;
+}
+
+.stake-container-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 9999 !important;
+}
+
+.stake-container {
+    background-color: #0E111B;
+    padding: 25px;
+    border-radius: 10px;
+    width: 550px;
+    max-width: 600px;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #21273a;
+}
+
+.stake-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
+}
+
+.stake-header span {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.network-selector {
+    display: flex;
+    align-items: center;
+    background-color: #2c2c4c;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.network-selector span {
+    margin-right: 5px;
+}
+
+.arrow-down {
+    width: 12px;
+    height: 12px;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tab-button.active, 
+.tab-button:hover {
+    background-color: #d9d9d3;
+    border-radius: 5px;
+    color: #000;
+}
+
+.stake-section, 
+.unstake-section, 
+.receive-section {
+    background-color: #2f3337;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.stake-input-container,
+.receive-input-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.stake-input,
+.receive-input {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    flex: 1;
+}
+
+.stake-input:focus,
+.receive-input:focus {
+    outline: none;
+}
+
+.max-button {
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.2s;
+    border: 2px solid #d9d9d3;
+}
+
+.max-button:hover {
+    background-color: #d9d9d3;
+    border: 2px solid #d9d9d3;
+    color: #000;
+}
+
+.percent-button {
+    background-color: #d9d9d3 !important;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.2s;
+    color: #000 !important;
+}
+
+.percent-button-last {
+    margin-right: 10px;
+}
+
+.percent-button:hover {
+    background-color: #353531 !important;
+    color: white !important;
+}
+
+.stake-info,
+.receive-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.eth-logo,
+.eeth-logo {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+
+.currency {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.balance {
+    font-size: 12px;
+    color: #999;
+}
+
+.exchange-rate {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.stake-button {
+    background-color: #d9d9d3;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #000;
+}
+
+.stake-button:hover {
+    background-color: #353531;
+    color: #fff;
+}
+
+.exchange-rate-child .you-earned-span {
+    display: block;
+}
+
+.exchange-rate-child .claim-logo {
+    width: 30px;
+    border-radius: 50%;
+    display: inline;
+    margin-right: 10px;
+}
+
+.exchange-rate .claim-button {
+    background-color: #d9d9d3;
+    border: none;
+    padding: 0px 15px 0px 15px;
+    width: 25%;
+    border-radius: 10px;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.exchange-rate .claim-button:hover {
+    background-color: #353531;
+    color: #fff;
+}
+
+/* For Chrome, Safari, Edge, Opera */
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+.no-arrows[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.stake-section .no-arrows {
+    background-color: #2f3337;
+}
+
+@media (max-width: 912px) {
+    .stake-parent {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .stake-parent {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .stake-container-parent {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .stake-container {
+        width: 100%;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .stake-header span {
+        font-size: 24px;
+    }
+
+    .tab-button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .stake-input,
+    .receive-input {
+        font-size: 16px;
+    }
+
+    .max-button {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .currency {
+        font-size: 16px;
+    }
+
+    .balance {
+        font-size: 10px;
+    }
+
+    .exchange-rate {
+        font-size: 12px;
+    }
+
+    .stake-button {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .stake-parent {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .stake-container-parent {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .stake-container {
+        width: 100%;
+        padding: 25px 10px 25px 10px;
+        max-width: 100%;
+    }
+
+    .stake-header span {
+        font-size: 20px;
+    }
+
+    .tab-button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .stake-input,
+    .receive-input {
+        font-size: 14px;
+    }
+
+    .max-button {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .currency {
+        font-size: 14px;
+    }
+
+    .balance {
+        font-size: 10px;
+    }
+
+    .exchange-rate {
+        font-size: 12px;
+    }
+
+    .stake-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

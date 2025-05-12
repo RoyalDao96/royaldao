@@ -1,0 +1,59 @@
+.kpi-parent {
+    margin-top: -22% !important;
+    margin-bottom: -10%;
+}
+
+@media (max-width: 1280px) {
+    .kpi-parent {
+        margin-top: -25% !important;
+        margin-bottom: -7%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .kpi-parent {
+        margin-top: -55% !important;
+        margin-bottom: -5%;
+    }
+}
+
+@media (max-width: 912px) {
+    .kpi-parent {
+        margin-top: -50% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .kpi-parent {
+        margin-top: -45% !important;
+        margin-bottom: -5%;
+    }
+}
+
+@media (max-width: 540px) {
+    .kpi-parent {
+        margin-top: -10% !important;
+        margin-bottom: 25%;
+    }
+}
+
+@media (max-width: 500px) {
+    .kpi-parent {
+        margin-top: -20% !important;
+        margin-bottom: 50%;
+    }
+}
+
+@media (max-width: 375px) {
+    .kpi-parent {
+        margin-top: 0% !important;
+        margin-bottom: 40%;
+    }
+}
+
+@media (max-width: 344px) {
+    .kpi-parent {
+        margin-top: -10% !important;
+        margin-bottom: 50%;
+    }
+}

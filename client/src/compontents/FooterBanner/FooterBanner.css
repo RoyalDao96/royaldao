@@ -1,0 +1,81 @@
+.footerBanner {
+    width: 100vw;
+    height: 25rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.footerBanner .imageContainer {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.footerBanner .imageContainer img {
+    width: 15rem;
+    height: auto;
+}
+
+.footerBanner .joinText {
+    font-size: 30px;
+    color: #fff;
+    padding: 1rem 2rem;
+    z-index: 10;
+    width: 35%;
+    text-transform: capitalize;
+}
+
+.footerBanner .btnContainer {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerBanner .btnContainer .joinBtn {
+    display: inline-block;
+    background-color: #debd94;
+    color: #000;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    position: relative;
+}
+
+.footerBanner .btnContainer .joinBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #debd94;
+}
+
+@media only screen and (max-width: 821px) {
+    .footerBanner {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    .footerBanner .btnContainer {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footerBanner .joinText {
+        font-size: 22px;
+        padding: 2rem 0;
+        width: 100%;
+    }
+}

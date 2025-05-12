@@ -1,0 +1,68 @@
+.parent-hub1 {
+    background-image: url('../../assets/webImages/about1.jpg');
+    background-size: cover;
+}
+
+.parent-hub .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.parent-hub .about .about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.parent-hub .about .about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 500ms ease;
+    border-radius: 7%;
+}
+
+.parent-hub .about .about-content {
+    flex: 1;
+}
+
+.parent-hub .about .about-content h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.parent-hub .about .about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cecece;
+}
+
+@media screen and (max-width: 821px) {
+    .parent-hub .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .parent-hub .about .about-image {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        display: flex;  /* Ensures the flexbox properties apply */
+        justify-content: center;  /* Centers the child horizontally */
+    }
+
+    .parent-hub .about .about-content p {
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .about2 .about-content2 {
+        order: 2;
+    }
+
+    .about2 .about-image2 {
+        order: 1;
+    }
+}

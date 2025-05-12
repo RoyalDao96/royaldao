@@ -1,0 +1,414 @@
+.locker-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+    height: 100vh;
+    top: 70px;
+}
+
+.locker-parent .tradeBox {
+    width: 550px;
+    max-width: 600px;
+    background-color: #0E111B;
+    border: 2px solid #21273a;
+    min-height: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 9999 !important;
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* For WebKit-based browsers (Safari, Chrome) */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer/Edge */
+}
+
+.locker-parent .tradeBoxHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+  
+.locker-parent .tradeBoxHeader h4 {
+    color: #fff;
+}
+  
+.locker-parent .cog {
+    color: #51586f;
+    transition: 0.3s;
+}
+    
+.locker-parent .cog:hover {
+    color: white;
+    rotate: 90deg;
+    cursor: pointer;
+}
+  
+.locker-parent .inputs {
+    position: relative;
+}
+  
+.locker-parent .assetOne {
+    position: absolute;
+    min-width: 50px;
+    height: 30px;
+    background-color: #d9d9d3;
+    top: 36px;
+    right: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    padding-right: 8px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+    
+.locker-parent .assetTwo {
+    position: absolute;
+    min-width: 50px;
+    height: 30px;
+    background-color: #d9d9d3;
+    top: 135px;
+    right: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    padding-right: 8px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+  
+.locker-parent .assetLogo {
+    height: 22px;
+    margin-left: 5px;
+}
+  
+.locker-parent .switchButton {
+    background-color: #d9d9d3;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+    position: absolute;
+    top: 86px;
+    left: 180px;
+    color: #5F6783;
+    border: 3px solid #d9d9d3;
+    font-size: 12px;
+    transition: 0.3s
+}
+  
+.locker-parent .switchButton:hover {
+    color: #000;
+    cursor: pointer;
+}
+  
+.locker-parent .tokenChoice {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+    
+.locker-parent .tokenChoice:hover {
+    cursor: pointer;
+    background-color: #1f2639;
+}
+  
+.locker-parent .tokenLogo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+  
+.locker-parent .swapButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d3; 
+    width: calc(100%);
+    height: 55px;
+    font-size: 20px;
+    border-radius: 12px;
+    color: #000;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 30px;
+    margin-top: 8px;
+}
+    
+.locker-parent .swapButton[disabled] {
+    background-color: #d9d9d3; 
+    opacity: 0.4;
+    color: #000;
+}
+    
+.locker-parent .swapButton[disabled]:hover {
+    cursor: not-allowed;
+  background-color: #353531; 
+}
+    
+.locker-parent .swapButton:hover {
+    cursor: pointer;
+    background-color: #353531;
+    color: #fff;
+}
+  
+.locker-parent .exchange-rate-parent {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+  
+.locker-parent .balance-parent {
+    padding: 0px 11px !important;
+    margin-bottom: 5px;
+}
+  
+.locker-parent .exchange-rate-parent span {
+    color: #fff;
+}
+  
+.locker-parent .exchange-rate {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #999;
+}
+  
+.locker-parent .percent-button {
+    background-color: #4a4a6a;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+  
+/* For Chrome, Safari, Edge, Opera */
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
+/* For Firefox */
+.no-arrows[type='number'] {
+    -moz-appearance: textfield;
+}
+  
+.ant-input {
+    background-color: #2c2d4c !important;
+    color: white !important;
+    border-width: 0px !important;
+    height: 96px !important;
+    margin-bottom: 5px;
+    font-size: 30px;
+    border-radius: 12px !important;
+}
+  
+.ant-input::placeholder {
+    color: #5f6783 !important;
+}
+  
+.ant-popover-arrow {
+    visibility: hidden;
+}
+  
+.ant-popover-title {
+    color: white !important;
+}
+  
+.ant-popover-inner-content {
+    color: white !important;
+}
+  
+.ant-popover-inner {
+    min-width: 260px !important;
+    min-height: 140px !important;
+    border: 1px solid #21273a;
+    background-color: #0e111b !important;
+}
+  
+.ant-radio-group {
+    margin-top: 10px;
+}
+  
+.ant-radio-button-wrapper {
+    background-color: #1f2639 !important;
+    color: white !important;
+    font-weight: 500;
+    border-color: white !important;
+}
+  
+.ant-radio-button-wrapper-checked {
+    border-color: white !important;
+    background-color: #363e54 !important;
+}
+  
+.ant-radio-button-wrapper-checked::before {
+    background-color: white !important;
+}
+  
+.ant-modal-content {
+    background-color: #0e111b !important;
+    color: white !important;
+    padding: 0px !important;
+}
+  
+.ant-modal {
+    border: 1px solid #363e54;
+    width: 400px !important;
+    border-radius: 10px;
+}
+  
+.ant-modal-header {
+    background-color: #0e111b !important;
+}
+  
+.ant-modal-title {
+    color: white !important;
+    padding-top: 17px !important;
+    margin-left: 20px !important;
+}
+  
+.ant-modal-close-icon {
+    color: #363e54 !important;
+    transition: 0.3s;
+}
+  
+.ant-modal-close-icon:hover {
+    color: white !important;
+}
+  
+@media (max-width: 1280px) {
+    .ant-input {
+      font-size: 26px;
+    }
+  
+    .locker-parent .balance-parent {
+      font-size: 14px;
+    }
+}
+  
+@media (max-width: 1024px) {
+    .ant-input {
+      font-size: 26px;
+    }
+  
+    .locker-parent .balance-parent {
+      font-size: 14px;
+    }
+}
+  
+@media (max-width: 912px) {
+    .locker-parent {
+      position: relative;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      padding: 0 7px 0 7px;
+    }
+}
+  
+@media (max-width: 820px) {
+    .locker-parent {
+      position: relative;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      padding: 0 7px 0 7px;
+    }
+    
+    .ant-input {
+      font-size: 26px;
+    }
+  
+    .locker-parent .balance-parent {
+      font-size: 14px;
+    }
+}
+  
+@media (max-width: 500px) {
+    .locker-parent {
+        position: relative;
+        left:  0;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        padding: 0 7px 0 7px;
+    }
+  
+    .ant-input {
+      font-size: 18px;
+    }
+  
+    .locker-parent .balance-parent {
+      font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .locker-parent {
+        position: relative;
+        left:  0;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        padding: 0 7px 0 7px;
+    }
+
+    .ant-input {
+      font-size: 14px;
+    }
+  
+    .locker-parent .balance-parent {
+      font-size: 12px;
+    }
+}
+  
+@media (max-width: 344px) {
+    .locker-parent {
+        position: relative;
+        left:  0;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        padding: 0 7px 0 7px;
+    }
+
+    .ant-input {
+      font-size: 14px;
+    }
+  
+    .locker-parent .balance-parent {
+      font-size: 12px;
+    }
+}

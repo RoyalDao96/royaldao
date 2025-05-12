@@ -1,0 +1,142 @@
+.pool-parent-vote {
+    display: flex; /* Use flexbox to center children */
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Keep your positioning relative as needed */
+    left: 300px;
+    width: calc(100% - 350px);
+    padding: 0 5px 0 5px;
+    top: 95px;
+}
+
+.pool-parent-vote .pools-voting {
+    width: 100%;
+}
+
+.pool-parent-vote .header {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebe0cc;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width */
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.pool-parent-vote .voting-round-text {
+    font-size: 14px !important;
+}
+  
+.pool-parent-vote .row {
+    display: flex;
+    justify-content: space-between; /* Keeps left and right aligned */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px; /* Keeps rows spaced */
+    gap: 5px; /* Minimizes space between the left and right sections */
+}
+  
+.pool-parent-vote .left {
+    display: flex;
+    align-items: center;
+    flex-shrink: 1; /* Prevents the left side from taking unnecessary space */
+}
+  
+.pool-parent-vote .left .icon {
+    font-size: 20px;
+    color: #6c757d;
+    margin-right: 10px;
+}
+  
+.pool-parent-vote .left p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+  
+.pool-parent-vote .left .highlight {
+    background-color: #ffedb8;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+  
+.pool-parent-vote .right {
+    text-align: right;
+    color: #333;
+    flex-shrink: 1; /* Prevents the right side from expanding unnecessarily */
+}
+  
+.pool-parent-vote .right-flex {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    gap: 10px; /* Spacing between each item */
+    width: auto; /* Adjust width based on content */
+    text-align: center;
+    color: #6c757d;
+}
+  
+.pool-parent-vote .right-flex .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.pool-parent-vote .right-flex p {
+    margin: 0;
+    color: #333;
+}
+  
+.pool-parent-vote .right-flex strong {
+    margin-top: 2px;
+    color: #333;
+    font-size: 16px;
+}
+
+.pool-parent-vote .total-voting-power-text {
+    font-size: 14px !important;
+}
+
+.pool-parent-vote .select-liquidity-pools h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.pool-parent-vote .tabs {
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0; /* Default background color for inactive tabs */
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    color: #000;
+}
+  
+.tab-button.active {
+    background-color: #ebe0cc; /* Active tab color */
+    color: #333; /* Text color for active tab */
+    font-weight: bold; /* Emphasize active tab text */
+}
+  
+.tab-button:hover {
+    background-color: #ccc; /* Hover effect for all tabs */
+}
+
+.row-color {
+    color: #fff !important;
+}
+
+.row-hover-color:hover {
+    background-color: #000;
+}

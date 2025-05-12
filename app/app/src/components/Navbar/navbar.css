@@ -1,0 +1,65 @@
+.home-container {
+    position: relative;
+    z-index: 1000;
+}
+
+.home-container .main {
+    /* position: fixed; */
+    position: absolute;
+    width: calc(100% - 250px);
+    left: 250px;
+    min-height: 100vh;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.home-container .main.active {
+    width: calc(100% - 75px);
+    left: 75px;
+}
+
+.home-container .topbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #353531;
+    padding: 0 10px;
+}
+
+.home-container .toggle {
+    color: #fff;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+    margin-top: 12px;
+}
+
+.home-container .topbar button {
+    color: #fff;
+}
+
+.connect-wallet-btn {
+    background-color: #948776;
+}
+
+@media (max-width: 991px) {
+    .home-container .toggle {
+        display: inline-block;
+    }
+
+    .home-container .main {
+        width: 100%;
+        left: 0;
+    }
+
+    .home-container .main.active {
+        left: 300px;
+    }
+}

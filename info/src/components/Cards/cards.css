@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Explora&family=Space+Grotesk:wght@300..700&display=swap');
+
+.cards-parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+}
+
+.cards-parent .article-card {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.cards-parent .article-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.cards-parent .article-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cards-parent .article-card .content {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+}
+
+.cards-parent .article-card .date,
+.cards-parent .article-card .title {
+    margin: 0;
+}
+
+.cards-parent .article-card .date {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 4px;
+}
+
+.cards-parent .article-card .title {
+    font-size: 17px;
+    color: #fff;
+}
+
+.content button {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 18px;
+    background-color: #debd94;
+    font-weight: bold;
+    box-shadow: 0 0 7px #debd94;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.content button:hover {
+    box-shadow: 0 0 25px #debd94;
+}
+
+.cards-parent .parent-article h1 {
+    font-family: "Explora", serif !important;
+    font-weight: 400 !important; 
+    font-style: normal !important;
+    font-size: 60px;
+    margin-top: -12px;
+}
+
+.cards-parent .parent-article .media {
+    width: 400px;
+}
+
+.download-a-tag { 
+    color: #000;
+    text-decoration: none;
+}

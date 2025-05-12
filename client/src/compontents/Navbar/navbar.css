@@ -1,0 +1,137 @@
+/* MyNavbar.css */
+
+.logoSpan {
+    cursor: pointer;
+}
+
+.navbar-toggler.active::before {
+    content: 'X';
+    font-size: 1.5em; /* Adjust size as needed */
+    background: #000;
+}
+
+.navbar-toggler.active .navbar-toggler-icon {
+    display: none;
+}
+
+.navbar-nav .nav-item, .nav-logo, .btn-connect-wallet, .launch-game-btn {
+    opacity: 0;
+    animation: slideInLeft 0.5s forwards;
+}
+
+.nav-item a {
+    position: relative;
+    text-decoration: none;
+}
+  
+.nav-item a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #debd94;
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+  
+.nav-item a:hover::before {
+    width: 100%;
+    left: 0;
+    transition-delay: 0.1s; /* Delay of 120ms */
+}
+
+.nav-logo {
+    animation-delay: 50ms;
+}
+  
+.navbar-nav .nav-item:nth-child(1) {
+    animation-delay: 100ms;
+}
+  
+.navbar-nav .nav-item:nth-child(2) {
+    animation-delay: 150ms;
+}
+  
+.navbar-nav .nav-item:nth-child(3) {
+    animation-delay: 200ms;
+}
+  
+.navbar-nav .nav-item:nth-child(4) {
+    animation-delay: 250ms;
+}
+  
+.navbar-nav .nav-item:nth-child(5) {
+    animation-delay: 300ms;
+}
+  
+.navbar-nav .nav-item:nth-child(6) {
+    animation-delay: 350ms;
+}
+  
+.navbar-nav .nav-item:nth-child(7) {
+    animation-delay: 400ms;
+}
+  
+.navbar-nav .nav-item:nth-child(8) {
+    animation-delay: 450ms;
+}
+
+.navbar .btn-connect-wallet {
+    animation-delay: 700ms;
+    width: 20%;
+    border: 3px solid #debd94;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    background-color: transparent;
+    color: #fff;
+    transition: 250ms all ease-in-out;
+}
+
+.navbar .btn-connect-wallet:hover {
+    border: none;
+    background-color: #debd94;
+    color: #000;
+}
+
+.navbar .launch-game-tag {
+    width: 20%;
+    color: #fff;
+    outline: none;
+}
+
+.navbar .launch-game-btn {
+    animation-delay: 620ms;
+    border: 3px solid #debd94;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    transition: 250ms all ease-in-out;
+}
+
+.navbar .launch-game-btn:hover {
+    border: none;
+    background-color: #debd94;
+    color: #000;
+}
+  
+@keyframes slideInLeft {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.navbar .nav-item {
+    align-items: center;
+}
+
+.navbar .logoImg {
+    width: 120px;
+    border-radius: 50%;
+}

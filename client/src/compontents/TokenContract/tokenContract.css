@@ -1,0 +1,68 @@
+.token-contract h2 {
+    color: #debd94;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.token-contract .token-detail h5 {
+    color: #debd94; /* Light gray for headings */
+}
+  
+.token-contract .token-detail p {
+    color: #ccc; /* White for text */
+    word-break: break-all; /* Ensure long addresses break */
+    font-size: 16px;
+    display: inline;
+}
+  
+.token-contract p {
+    color: #ccc; /* Light gray for the disclaimer */
+}
+  
+.bg-dark {
+    border-radius: 12px; /* Match border radius from the design */
+}
+
+.copyIcon {
+    width: 15px;
+    display: inline;
+    margin-left: 5px;
+}
+
+.token-address {
+    cursor: pointer;
+}
+
+.token-detail {
+    text-align: center; /* Centers text within the token-detail divs */
+}
+
+/* Default style for smaller screens */
+.border-line {
+    border-bottom: 1px solid #debd94; /* Light gray border for the bottom */
+    padding: 25px;
+}
+
+/* Remove border-bottom from the last child in small screens */
+.border-line:last-child {
+    border-bottom: none;
+}
+
+.chainLogo {
+    width: 40px;
+    margin-left: 14px;
+}
+
+/* Media query for Bootstrap md breakpoint and above */
+@media (min-width: 768px) {
+
+    .border-line {
+        border-bottom: none; /* Remove bottom border for larger screens */
+        border-right: 1px solid #debd94; /* Light gray border on the right */
+    }
+
+    /* Remove the border-right from the last child in larger screens */
+    .border-line:last-child {
+        border-right: none;
+    }
+}

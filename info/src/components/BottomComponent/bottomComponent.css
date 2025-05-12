@@ -1,0 +1,171 @@
+.parent-bottom {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+    width: 100%;
+    padding: 20px 0; /* Add padding as needed */
+}
+  
+.parent-bottom .bottom {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    gap: 20px; /* Space between columns */
+    justify-items: center; /* Center items within their columns */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text in the middle column */
+    width: 100%;
+}
+  
+.parent-bottom .bottom img {
+    width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.8;
+}
+
+.parent-bottom .bottom .star {
+    opacity: 0.7;
+}
+  
+.parent-bottom .bottom a {
+    text-decoration: none;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    font-size: 40px;
+    background-color: #000;
+}
+
+.parent-bottom .bottom a::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.parent-bottom .bottom a::before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #be0000, #ca5b00, #c9c500, #37c200,
+        #00b698, #0021c9, #be0095, #b90000
+    );
+    position: absolute;
+    top: -2px;
+    left: -8px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(102% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.parent-bottom .middle {
+    overflow-y: hidden;
+    height: 200px;
+    width: 100%;
+}
+
+.parent-bottom .middle h1 {
+    font-family: "Explora", serif !important;
+    font-size: 62px;
+}
+
+@media (max-width: 860px) {
+    .parent-bottom .bottom {
+        grid-template-columns: 100% 100% 100%;
+    }
+
+    .parent-bottom .star,
+    .parent-bottom .ruby {
+        display: none !important;
+    }
+
+    .parent-bottom .bottom a {
+        text-decoration: none;
+        padding: 15px 25px;
+        border: none;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 12px;
+        font-size: 28px;
+        background-color: #000;
+    }
+
+    .parent-bottom .middle h1 {
+        font-family: "Explora", serif !important;
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 600px) {
+    .parent-bottom .middle h1 {
+        font-family: "Explora", serif !important;
+        font-size: 62px;
+    }
+    
+    .parent-bottom .bottom {
+        grid-template-columns: 100% 100% 100%;
+    }
+
+    .parent-bottom .star,
+    .parent-bottom .ruby {
+        display: none !important;
+    }
+
+    .parent-bottom .bottom a {
+        text-decoration: none;
+        padding: 15px 25px;
+        border: none;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 12px;
+        font-size: 28px;
+        background-color: #000;
+    }
+}
+
+@media (max-width: 390px) {
+    .parent-bottom .bottom a {
+        text-decoration: none;
+        padding: 15px 20px;
+        border: none;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 12px;
+        font-size: 22px;
+        background-color: #000;
+    }
+
+    .parent-bottom .middle h1 {
+        font-family: "Explora", serif !important;
+        font-size: 42px;
+    }
+}

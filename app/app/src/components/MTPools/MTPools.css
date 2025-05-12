@@ -1,0 +1,41 @@
+/* Style for the button with right arrow */
+.mtPool-parent .right-arrow-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    display: flex;  /* Align the image inside the button */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the arrow image */
+.mtPool-parent .arrow-icon {
+    width: 16px;  /* Adjust the size of the arrow */
+    height: 16px;  /* Keep it proportionate */
+    opacity: 0.6;  /* Optional: adjust opacity to match the design */
+    filter: invert(1);
+}
+
+.mtPool-parent .right-arrow-btn:hover .arrow-icon {
+    opacity: 1; /* Fully visible on hover */
+}
+
+/* Type pill container */
+.mtPool-parent .type-tags {
+    display: flex;
+    flex-direction: column; /* Make pills stack vertically */
+    gap: 5px; /* Add space between each tag */
+}
+
+/* Individual type tag (pill) */
+.mtPool-parent .type-tag {
+    display: inline-block;
+    padding: 6px 3px;
+    border: 1px solid #333;  /* Dark text */
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 8px;  /* Rounded corners */
+    white-space: nowrap;  /* Prevent text from wrapping */
+    text-align: center;
+}
