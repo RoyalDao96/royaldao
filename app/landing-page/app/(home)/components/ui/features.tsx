@@ -21,14 +21,14 @@ export function FeaturesSection() {
     {
       title: "Vaulting As A Service",
       description:
-        "Creating vaults from reliable, constantly value-appreciating RWAs into yield-bearing, high-yield fixed income SSTs for institutions and individuals.",
+        "Creating vaults from reliable, constantly value-appreciating RWAs into constantly appreciating, Semi Stable Tokens (SSTs) for institutions and individuals.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
       title: "No Border, No Limit",
       description:
-        "Available 24/7, 365 days a year, to serve everyone without discrimination, with a solution everyone needs but no one has provided yet.",
+        "Available 24/7, 365 days a year, to serve everyone without discrimination, with a solution everyone needs.",
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },
@@ -41,7 +41,7 @@ export function FeaturesSection() {
         </h4>
 
         <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          High-yield fixed-income sandbox environment for individuals and institutions. Instant liquidity solution for RWA owners with fractional ownership offerings.
+          A stable and appreciating asset for individuals and institutions. Instant liquidity solutions for RWA owners through fractional ownership offerings.
         </p>
       </div>
 

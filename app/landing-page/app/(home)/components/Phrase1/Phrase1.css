@@ -40,6 +40,11 @@
     font-weight: bold;
 }
 
+.ph1-desc {
+    line-height: 1.8;
+}
+
+
 @media (max-width: 1280px) {
     .parent-phrase1 {
         width: 97%;

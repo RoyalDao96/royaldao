@@ -31,7 +31,7 @@ export default function Features2() {
               <GlareCard className="relative flex flex-col items-start justify-end py-8 px-6">
                   <p className="font-bold text-white text-lg" style={{ fontSize: "16px" }}>Backing Index Fund (BIF)</p>
                   <p className="font-normal text-base text-neutral-200 mt-4" style={{ fontSize: "12px" }}>
-                    The safest place to start your crypto investment journey with 100% principal protection and yield-bearing benefits.
+                    The safest place to start your crypto investment journey with 100% principal protection and tokenize value appreciating asset.
                   </p>
               </GlareCard>
           </div>
@@ -40,7 +40,7 @@ export default function Features2() {
               <GlareCard className="relative flex flex-col items-start justify-end py-8 px-6">
                   <p className="font-bold text-white text-lg" style={{ fontSize: "16px" }}>Exclusive Rubies & Jades Auctions</p>
                   <p className="font-normal text-base text-neutral-200 mt-4" style={{ fontSize: "12px" }}>
-                    Exclusive investment-grade Burmese rubies and jades auction for those holding a certain amount of $Grimstone DAO tokens.
+                    Exclusive investment-grade Burmese rubies and jades auction for those holding a certain amount of $Grimstone The DAO tokens.
                   </p>
               </GlareCard>
           </div>
@@ -49,7 +49,7 @@ export default function Features2() {
               <GlareCard className="relative flex flex-col items-start justify-end py-8 px-6">
                   <p className="font-bold text-white text-lg" style={{ fontSize: "16px" }}>Instant Liquid Solution</p>
                   <p className="font-normal text-base text-neutral-200 mt-4" style={{ fontSize: "12px" }}>
-                    A one-stop streamlined process to make any relevant RWA holder{`&apos`}s properties liquid with self-custodial service.
+                    A one-stop streamlined process to make any relevant RWA holders & properties to liquid with self-custodial service.
                   </p>
               </GlareCard>
           </div>

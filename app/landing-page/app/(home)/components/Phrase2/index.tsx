@@ -3,7 +3,7 @@ import './Phrase2.css'
 import { TextGenerateEffect } from '../ui/text-generate-effect';
 
 export default function Phrase2() {
-    const words = `"The first-ever protocol that offers a non-zero guarantee with non-inflationary, high-yield fixed income."`;
+    const words = `"The first-ever protocol that offers a non-zero guarantee with non-inflationary, ever appreciating asset."`;
   
     return (
       <div className='h-screen flex flex-col items-center justify-center w-full'>

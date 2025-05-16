@@ -60,9 +60,8 @@ export default function Phrase1() {
                   &nbsp;There is no asset that 
                   {" "}
                   <Highlight className="text-black dark:text-white">
-                    consistently appreciates
+                    consistently appreciating assets
                   </Highlight>
-                  &nbsp;in value with yield-bearing ability, 
                   ensuring 
                   {" "}
                   <Highlight className="text-black dark:text-white">

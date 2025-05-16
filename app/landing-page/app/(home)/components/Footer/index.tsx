@@ -7,10 +7,10 @@ function Footer() {
     return (
         <div className='mt-40'>
             <div className='parent-footer'>
-                <h1 className='mx-auto text-center tracking-tight font-medium text-white mt-10' style={{ letterSpacing: "5px" }}>
+                {/* <h1 className='mx-auto text-center tracking-tight font-medium text-white mt-10' style={{ letterSpacing: "5px" }}>
                     No matter how the market performs, we provide redemption guarantee with 100% principal protection & always 
                     guarantees your high-yield fixed income.
-                </h1>
+                </h1> */}
 
                 <img
                     src="/Logo.png"
